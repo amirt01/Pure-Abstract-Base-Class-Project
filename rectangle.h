@@ -1,18 +1,20 @@
 #ifndef RECTANGLE_H_INCLUDED
 #define RECTANGLE_H_INCLUDED
+#include "BasicShape.h"
 
-class rectangle {
+class Rectangle : public BasicShape {
 private:
     long int width;
     long int length;
 public:
-    rectangle(long int w, long int l){
+    Rectangle(long int w, long int l){
         width = w;
         length = l;
+        calcArea();
     }
     long int getWidth(){return (width);}
     long int getLength(){return (length);}
-    long int calcArea(){return (width * length);}
+    void calcArea(){area = width * length;}
 };
 
 #endif // RECTANGLE_H_INCLUDED

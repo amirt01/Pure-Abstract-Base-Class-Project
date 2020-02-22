@@ -12,13 +12,13 @@ using namespace std;
 
 class BasicShape
 {
-private:
+protected:
     double area;
 public:
     //Default constructor
     BasicShape(){ area = 0; }
-    
+
     double getArea() { return area; }
-    virtual double calcArea() = 0;
+    virtual void calcArea() = 0;
 };
 #endif /* BasicShape_h */
