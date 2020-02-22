@@ -5,7 +5,6 @@
 
 #ifndef Circle_h
 #define Circle_h
-#include "BasicShape.h"
 
 class Circle: public BasicShape
 {
