@@ -10,7 +10,7 @@
 #ifndef Circle_h
 #define Circle_h
 #include <cmath>
-#include "BasicShape.h"
+#include "basicShape.h"
 
 class Circle: public basicShape
 {
