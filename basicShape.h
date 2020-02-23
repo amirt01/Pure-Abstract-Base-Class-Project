@@ -1,15 +1,10 @@
 /*
-
   CIS 22B
-
     Lab5 - Basic Shape: The Basic Shape class that Circle
     and Rectangle class inherits from. It stores the area
-    of the shape and calculates it. 
-
+    of the shape and calculates it.
   Author: Amir Tadros, Anh Hoang Mai Le, Arvind Kumar, Timothy Hyatt
-
   Date: February 22, 2020
-
 */
 
 #ifndef BasicShape_h
