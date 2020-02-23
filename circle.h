@@ -12,7 +12,7 @@
 #include <cmath>
 #include "BasicShape.h"
 
-class Circle: public BasicShape
+class Circle: public basicShape
 {
 private:
     long centerX;
