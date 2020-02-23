@@ -1,15 +1,10 @@
 /*
-
   CIS 22B
-
     Lab5 - Rectangle: This class inherits from the Basic Shape
     class and constructs a rectangle that returns the area of the
     rectangle as well as it's width and length.
-
   Author: Amir Tadros, Anh Hoang Mai Le, Arvind Kumar, Timothy Hyatt
-
   Date: February 22, 2020
-
 */
 
 #ifndef RECTANGLE_H_INCLUDED
@@ -35,7 +30,10 @@ public:
     long int getLength(){return (length);}
 
     // Set the area of the rectangle
-    void calcArea(){area = width * length;}
+    void calcArea()
+    {
+        area = width * length;
+    }
 };
 
 #endif // RECTANGLE_H_INCLUDED
