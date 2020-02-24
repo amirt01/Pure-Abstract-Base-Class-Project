@@ -3,7 +3,8 @@
     Lab5 - Rectangle: This class inherits from the Basic Shape
     class and constructs a rectangle that returns the area of the
     rectangle as well as it's width and length.
-  Author: Amir Tadros, Anh Hoang Mai Le, Arvind Kumar, Timothy Hyatt
+  Author: Amir Tadros
+  Other Group Members: Anh Hoang Mai Le, Arvind Kumar, Timothy Hyatt
   Date: February 22, 2020
 */
 
@@ -15,20 +16,28 @@ private:
     long int width;
     long int length;
 public:
-    // Default constructor
+    /* Constructor which takes in
+    the desired width and length of
+    the rectangle and calls the calcArea
+    function.*/
     Rectangle(long int w, long int l){
         width = w;
         length = l;
         calcArea();
     }
 
-    // Get the width of the rectangle
+    /* Function which takes no parameters
+    and returns the local width variable.*/
     long int getWidth(){return (width);}
 
-    // Get the length of the rectangle
+    /* Function which takes no parameters
+    and returns the local length variable.*/
     long int getLength(){return (length);}
 
-    // Set the area of the rectangle
+    /* Function which takes no parameters
+    and calculates the area of the rectangle
+    and assigns that value to the inherited
+    area variable. Returns nothing.*/
     void calcArea()
     {
         area = width * length;
