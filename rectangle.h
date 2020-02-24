@@ -9,7 +9,6 @@
 
 #ifndef RECTANGLE_H_INCLUDED
 #define RECTANGLE_H_INCLUDED
-#include "basicShape.h"
 
 class Rectangle : public BasicShape {
 private:
