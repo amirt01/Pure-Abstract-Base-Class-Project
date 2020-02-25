@@ -1,7 +1,8 @@
 /*
   CIS 22B
     Lab5 - Main driver: This main.cpp program tests calculating areas of rectanlges and circles
-  Author: Amir Tadros, Anh Hoang Mai Le, Arvind Kumar, Timothy Hyatt
+  Author: Anh Hoang Mai Le
+  Other members of the group: Amir Tadros, Arvind Kumar, Timothy Hyatt
   Date: February 23, 2020
 */
 #include "BasicShape.h"
