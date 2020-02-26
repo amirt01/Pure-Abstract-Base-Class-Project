@@ -3,7 +3,7 @@
     Lab5 - Basic Shape: The Basic Shape class that Circle
     and Rectangle class inherits from. It stores the area
     of the shape and calculates it.
-  Author: Amir Tadros, Anh Hoang Mai Le, Arvind Kumar, Timothy Hyatt
+  Author: Arvind Kumar, Others: Amir Tadros, Anh Hoang Mai Le, Timothy Hyatt
   Date: February 22, 2020
 */
 
