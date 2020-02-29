@@ -1,7 +1,8 @@
 /*
   CIS 22B
     Lab5 - Main driver: This main driver programs test the Circle.h and Rectangle.h header files
-  Author: Amir Tadros, Anh Hoang Mai Le, Arvind Kumar, Timothy Hyatt
+  Author: Anh Hoang Mai Le
+  Others: Amir Tadros, Anh Hoang Mai Le, Arvind Kumar, Timothy Hyatt
   Date: February 23, 2020
 */
 #include <iostream>
