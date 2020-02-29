@@ -16,11 +16,25 @@ using namespace std;
 
 int main()
 {
-    Circle mycircle(1,2,3);
-    Rectangle myrectangle(2, 7);
+
+
+
+    double radius;
+    long width;
+    long length;
+
+    cout << "What radius would you like to have? ";
+    cin >> radius;
+    Circle mycircle(1,2,radius);
+
+    cout << "What length would you like to have? ";
+    cin >> length;
+    cout << "What width would you like to have? ";
+    cin >> width;
+    Rectangle myrectangle(width, length);
 
     cout<<"A circle with center ("<<mycircle.getCenterX()<<","<<mycircle.getCenterY()
-        <<") and radius = 3 has an area = "<<mycircle.getArea()<<endl;
+        <<") and radius = " << radius << " has an area = "<<mycircle.getArea()<<endl;
     cout<<"A rectangle with size "<<myrectangle.getWidth()<<"x"<<myrectangle.getLength()
         <<" has an area = "<<myrectangle.getArea()<<endl;
 
