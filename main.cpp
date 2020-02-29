@@ -1,42 +1,57 @@
 /*
   CIS 22B
-    Lab5 - Main driver: This main.cpp program tests calculating areas of rectanlges and circles
-  Author: Anh Hoang Mai Le
-  Other members of the group: Amir Tadros, Arvind Kumar, Timothy Hyatt
+    Lab5 - Rectangle: This class inherits from the Basic Shape
+    class and constructs a rectangle that returns the area of the
+    rectangle as well as it's width and length.
+  Author: Amir Tadros, Anh Hoang Mai Le, Arvind Kumar, Timothy Hyatt
   Date: February 23, 2020
 */
+#include <iostream>
 #include "BasicShape.h"
 #include "Circle.h"
 #include "Rectangle.h"
-
-#include <iostream>
-#include <string>
 
 using namespace std;
 
 int main()
 {
-
-
-
     double radius;
-    long width;
-    long length;
+    long CenterX, CenterY;
 
-    cout << "What radius would you like to have? ";
-    cin >> radius;
-    Circle mycircle(1,2,radius);
-
-    cout << "What length would you like to have? ";
-    cin >> length;
-    cout << "What width would you like to have? ";
-    cin >> width;
-    Rectangle myrectangle(width, length);
+    cout<<"Enter your circle's center's x-coordinate (long): ";
+    cin>>CenterX;
+    cout<<"Enter your circle's center's y-coordinate (long): ";
+    cin>>CenterY;
+    cout<<"Enter your circle's radius (double): ";
+    cin>>radius;
+    Circle mycircle(CenterX, CenterY, radius);
+    mycircle.calcArea();
 
     cout<<"A circle with center ("<<mycircle.getCenterX()<<","<<mycircle.getCenterY()
-        <<") and radius = " << radius << " has an area = "<<mycircle.getArea()<<endl;
-    cout<<"A rectangle with size "<<myrectangle.getWidth()<<"x"<<myrectangle.getLength()
-        <<" has an area = "<<myrectangle.getArea()<<endl;
+        <<") and radius = "<<mycircle.getRadius()<<" has an area = "<<mycircle.getArea()<<endl;
 
+    long width, length;
+    cout<<"Enter your rectangle's width (integer): ";
+    cin>>width;
+    cout<<"Enter your rectangle's length (integer): ";
+    cin>>length;
+    Rectangle myrectangle(width, length);
+    myrectangle.calcArea();
+
+    cout<<"A rectangle with size "<<myrectangle.getWidth()<<"x"<<myrectangle.getLength()
+    <<" has an area = "<<myrectangle.getArea()<<endl;
     return 0;
 }
+
+/*
+Sample output:
+
+Enter your circle's center's x-coordinate (long): 2
+Enter your circle's center's y-coordinate (long): 4
+Enter your circle's radius (double): 3.5
+A circle with center (2,4) and radius = 3.5 has an area = 38.4845
+Enter your rectangle's width (integer): 5
+Enter your rectangle's length (integer): 14
+A rectangle with size 5x14 has an area = 70
+
+*/
