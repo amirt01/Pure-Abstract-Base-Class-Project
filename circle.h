@@ -49,6 +49,16 @@ public:
     */
     long getCenterY(){ return centerY; }
 
+
+    /*
+
+      Gets the the radius of the circle
+
+      Return value: double - The radius
+
+    */
+    double getRadius(){ return radius; }
+
     /*
 
       Calculate the area of the circle by multiplying
